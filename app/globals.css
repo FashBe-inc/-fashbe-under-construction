@@ -27,6 +27,50 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
+/* Custom cursor styles */
+.custom-cursor {
+  cursor: none !important;
+}
+
+.custom-cursor * {
+  cursor: none !important;
+}
+
+/* Add a subtle glow effect to interactive elements */
+.custom-cursor a:hover,
+.custom-cursor button:hover,
+.custom-cursor input:hover,
+.custom-cursor [role="button"]:hover,
+.custom-cursor [tabindex="0"]:hover {
+  box-shadow: 0 0 10px rgba(253, 221, 0, 0.3);
+}
+
+/* Disable custom cursor on mobile/touch devices */
+@media (hover: none) {
+  .custom-cursor {
+    cursor: auto !important;
+  }
+
+  .custom-cursor * {
+    cursor: auto !important;
+  }
+}
+
+/* Gentle bouncing animation for the phone mockup */
+@keyframes gentle-bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(6deg);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 6s ease-in-out infinite;
+}
+
 /* Make interactive elements have a subtle glow on hover */
 a:hover,
 button:hover,

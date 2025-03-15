@@ -55,12 +55,12 @@ export default function Home() {
 
           {/* Right content - Phone mockup */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-[400px]">
+            <div className="relative w-full max-w-[400px] animate-gentle-bounce">
               {/* Glow effect */}
-              <div className="absolute -inset-4 bg-yellow-400/20 rounded-[32px] blur-2xl" />
+              <div className="absolute -inset-4 bg-yellow-400/20 rounded-[32px] blur-2xl transform rotate-6" />
 
               {/* Phone mockup */}
-              <div className="relative">
+              <div className="relative transform rotate-6 hover:rotate-8 transition-transform duration-300">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fb-preview-Vb2E11Dd9VDAlJToI29i3oqJLvcr3x.png"
                   alt="FashBe App Preview"
