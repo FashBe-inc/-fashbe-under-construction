@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { HomeIcon } from "lucide-react";
-import Footer from "@/components/footer";
 
 const links = [
   { href: "/policy", label: "Privacy Policy" },
@@ -60,7 +59,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </ul>
             </div>
           </div>
-        <Footer />
       </main>
     </div>
   );
