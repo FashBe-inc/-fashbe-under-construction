@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </nav>
 
       {/* Page Content */}
-      <main className="pt-[100px] w-[60%] mx-auto">
+      <main className="pt-[100px] w-[93%] md:w-[60%] mx-auto">
         {children}
 
         {/* Links to Other Policies */}
@@ -57,8 +57,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
               ))}
             </ul>
-            </div>
           </div>
+        </div>
       </main>
     </div>
   );
